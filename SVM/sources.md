@@ -1,0 +1,2 @@
+- <http://web.mit.edu/6.034/wwwbob/svm-notes-long-08.pdf>
+- <https://towardsdatascience.com/understanding-support-vector-machine-part-1-lagrange-multipliers-5c24a52ffc5e>
