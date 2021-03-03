@@ -13,11 +13,11 @@ Have you ever learned a machine learning algorithm and you want to implement it 
 		- Radial Basis Function Network
 - Unsupervised learning:
 	- Dimensionalty reduction:
-		- Pricipal Component Analysis
+		- Pricipal Component Analysis and its variations: PCA, dual PCA, kernel PCA, Supervised PCA, kernel SPCA
 		- T-SNE
 		- Linear Discriminant Analysis
 		- Isomap
-		- Autoencoder
+		- Autoencoder: vanilla autoencoder, sparsity autoencoder
 		- Locally Linear Embedding
 		- Multi-dimensional Scaling
 		- Sammon mapping
