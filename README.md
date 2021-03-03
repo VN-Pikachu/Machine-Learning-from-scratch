@@ -3,14 +3,14 @@ Have you ever learned a machine learning algorithm and you want to implement it 
 
 ## Implemented algorithms
 - Supervised learning:
-	- Regression:
-		- Linear Regression
-		- Neural Networks
+  - Regression:
+	- Linear Regression
+	- Neural Networks
   - Classification:
-	  - Logistic Regression
-		- Softmax Regression
-		- Support Vector Machine
-		- Radial Basis Function Network
+	- Logistic Regression
+	- Softmax Regression
+	- Support Vector Machine
+	- Radial Basis Function Network
 - Unsupervised learning:
 	- Dimensionalty reduction:
 		- Pricipal Component Analysis and its variations: PCA, dual PCA, kernel PCA, Supervised PCA, kernel SPCA
@@ -24,9 +24,9 @@ Have you ever learned a machine learning algorithm and you want to implement it 
 	- Clustering:
 		- DBSCAN
 		- Gaussian Mixtured Model
-    - Hierarchical Clustering
+                - Hierarchical Clustering
 		- K-means
-    - Meanshift
+                - Meanshift
 		- Spectral Clustering
 
 			
