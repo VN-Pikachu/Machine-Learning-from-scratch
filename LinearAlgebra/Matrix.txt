@@ -1,0 +1,4 @@
+Matrix Calculus (Todo)
+1.Best
+http://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf
+2.http://www.ee.ic.ac.uk/hp/staff/dmb/matrix/calculus.html

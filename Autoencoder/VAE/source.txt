@@ -1,0 +1,7 @@
+Intuition and Implementation in Keras
+https://wiseodd.github.io/techblog/2016/12/10/variational-autoencoder/
+Theory
+https://stats.stackexchange.com/questions/321841/what-are-variational-autoencoders-and-to-what-learning-tasks-are-they-used
+papers:
+https://arxiv.org/pdf/1312.6114.pdf
+https://arxiv.org/pdf/1606.05908.pdf

@@ -1,0 +1,303 @@
+def middle( start, target,steps,rules):
+    
+    flip = steps%2
+    s = [{0:{start}, 1:set()}, {0:set(), 1:set()}]
+    s[1][steps%2].add(target)
+    queue = [[{start}, 0], [{target}, steps]]
+    i = 0
+    cnt = 0
+    while queue[0][1] < queue[1][1]:
+        strs, step = queue[i]
+        step +=  [1,-1][i]
+        parity = step%2
+        tmp = set()
+        for str in strs:
+            for m,n in rules:
+                if i % 2 : m,n = n, m
+                for j in range(len(str) - len(m) + 1):
+                    if str[j:j+len(m)] == m:
+                        new = str[:j] + n + str[j+len(m):]
+
+                        if new in s[i^1][parity]:
+                           
+                            return True
+                        
+                        if new not in s[i][parity]:
+                            
+                            tmp.add(new)
+                            s[i][parity].add(new)
+                    cnt += 1
+                    
+        queue[i] = [tmp, step]
+        i = (i+1) % 2
+    
+    return False
+                        
+def unlocktheCode( src, tgt,steps, rules):
+    
+    def hash(state):
+        return len(state), int(state.replace("X", "0").replace("O", "1"), 2)
+
+    def update(state, pos, length, pattern, p_length):
+        return ((state >> (pos + length)) << (pos + p_length)) | (state & ((1 << pos) - 1)) | (pattern << pos)
+
+    RULES = [map(hash, i) for i in rules]
+
+    src_l, src = hash(src)
+    tgt_l, tgt = hash(tgt)
+
+    flag = 0
+    lim = min(6, steps)
+
+    vis = [{} for i in xrange(51)]
+    queue = [(src_l, src, [])]
+    MOVES = [set() for i in xrange(51)]
+
+    for length, state, moves in queue:
+        if len(moves) == lim:
+            MOVES[length].add(state)
+        else:
+            for rule, ((a_len, a), (b_len, b)) in enumerate(RULES):
+                for pos in xrange(0, length - a_len + 1):
+                    if ((1 << a_len) - 1) & (state >> pos) != a:
+                        continue
+                    new_length = length + b_len - a_len
+                    new_state = update(state, pos, a_len, b, b_len)
+                    if new_state in vis[new_length]:
+                        diff = len(moves) - len(vis[new_length][new_state])
+                        if diff == 0:
+                            continue
+                        if (steps - (len(vis[new_length][new_state]) + 1)) % diff == 0:
+                            return True
+                        continue
+                    vis[new_length][new_state] = moves
+                    queue.append((new_length, new_state, moves + [rule * 53 + pos]))
+
+    memo = [set() for i in xrange(51)]
+
+    def helper(cur, length, state):
+        if cur == 0:
+            return state in MOVES[length]
+        if (length, state) in memo[length]:
+            return False
+        memo[length].add((length, state))
+        for rule, ((b_len, b), (a_len, a)) in enumerate(RULES):
+            for pos in xrange(0, length - a_len + 1):
+                if ((1 << a_len) - 1) & (state >> pos) != a:
+                    continue
+                value = helper(cur - 1, length + (b_len - a_len), update(state, pos, a_len, b, b_len))
+                if value == True:
+                    return True
+        return False
+
+    return helper(steps - lim, tgt_l, tgt)
+def unlockTheCode( src, tgt,steps, rules):
+    if steps < 15:
+       return middle(src, tgt, steps, rules)
+    def hash(state):
+        return len(state), int(state.replace("X", "0").replace("O", "1"), 2)
+
+    def update(state, pos, length, pattern, p_length):
+        return ((state >> (pos + length)) << (pos + p_length)) | (state & ((1 << pos) - 1)) | (pattern << pos)
+
+    RULES = [map(hash, i) for i in rules]
+
+    src_l, src = hash(src)
+    tgt_l, tgt = hash(tgt)
+
+    flag = 0
+    lim = min(6, steps)
+
+    vis = [{} for i in xrange(51)]
+    queue = [(src_l, src, [])]
+    MOVES = [set() for i in xrange(51)]
+
+    for length, state, moves in queue:
+        if len(moves) == lim:
+            MOVES[length].add(state)
+        else:
+            for rule, ((a_len, a), (b_len, b)) in enumerate(RULES):
+                for pos in xrange(0, length - a_len + 1):
+                    if ((1 << a_len) - 1) & (state >> pos) != a:
+                        continue
+                    new_length = length + b_len - a_len
+                    new_state = update(state, pos, a_len, b, b_len)
+                    if new_state in vis[new_length]:
+                        diff = len(moves) - len(vis[new_length][new_state])
+                        if diff == 0:
+                            continue
+                        
+                        continue
+                    vis[new_length][new_state] = moves
+                    queue.append((new_length, new_state, moves + [rule * 53 + pos]))
+
+    memo = [set() for i in xrange(51)]
+
+    def helper(cur, length, state):
+        if cur == 0:
+            return state in MOVES[length]
+        if (length, state) in memo[length]:
+            return False
+        memo[length].add((length, state))
+        for rule, ((b_len, b), (a_len, a)) in enumerate(RULES):
+            for pos in xrange(0, length - a_len + 1):
+                if ((1 << a_len) - 1) & (state >> pos) != a:
+                    continue
+                value = helper(cur - 1, length + (b_len - a_len), update(state, pos, a_len, b, b_len))
+                if value == True:
+                    return True
+        return False
+
+    return helper(steps - lim, tgt_l, tgt)
+
+def middle( start, target,steps,rules):
+    
+    flip = steps%2
+    s = [{0:{start}, 1:set()}, {0:set(), 1:set()}]
+    s[1][steps%2].add(target)
+    queue = [[{start}, 0], [{target}, steps]]
+    i = 0
+    cnt = 0
+    while queue[0][1] < queue[1][1]:
+        strs, step = queue[i]
+        step +=  [1,-1][i]
+        parity = step%2
+        tmp = set()
+        for str in strs:
+            for m,n in rules:
+                if i % 2 : m,n = n, m
+                for j in range(len(str) - len(m) + 1):
+                    if str[j:j+len(m)] == m:
+                        new = str[:j] + n + str[j+len(m):]
+
+                        if new in s[i^1][parity]:
+                           
+                            return True
+                        
+                        if new not in s[i][parity]:
+                            
+                            tmp.add(new)
+                            s[i][parity].add(new)
+                    cnt += 1
+                    
+        queue[i] = [tmp, step]
+        i = (i+1) % 2
+    
+    return False
+                        
+def unlocktheCode( src, tgt,steps, rules):
+    
+    def hash(state):
+        return len(state), int(state.replace("X", "0").replace("O", "1"), 2)
+
+    def update(state, pos, length, pattern, p_length):
+        return ((state >> (pos + length)) << (pos + p_length)) | (state & ((1 << pos) - 1)) | (pattern << pos)
+
+    RULES = [map(hash, i) for i in rules]
+
+    src_l, src = hash(src)
+    tgt_l, tgt = hash(tgt)
+
+    flag = 0
+    lim = min(6, steps)
+
+    vis = [{} for i in range(51)]
+    queue = [(src_l, src, [])]
+    MOVES = [set() for i in range(51)]
+
+    for length, state, moves in queue:
+        if len(moves) == lim:
+            MOVES[length].add(state)
+        else:
+            for rule, ((a_len, a), (b_len, b)) in enumerate(RULES):
+                for pos in range(0, length - a_len + 1):
+                    if ((1 << a_len) - 1) & (state >> pos) != a:
+                        continue
+                    new_length = length + b_len - a_len
+                    new_state = update(state, pos, a_len, b, b_len)
+                    if new_state in vis[new_length]:
+                        diff = len(moves) - len(vis[new_length][new_state])
+                        if diff == 0:
+                            continue
+                        if (steps - (len(vis[new_length][new_state]) + 1)) % diff == 0:
+                            return True
+                        continue
+                    vis[new_length][new_state] = moves
+                    queue.append((new_length, new_state, moves + [rule * 53 + pos]))
+
+    memo = [set() for i in range(51)]
+
+    def helper(cur, length, state):
+        if cur == 0:
+            return state in MOVES[length]
+        if (length, state) in memo[length]:
+            return False
+        memo[length].add((length, state))
+        for rule, ((b_len, b), (a_len, a)) in enumerate(RULES):
+            for pos in range(0, length - a_len + 1):
+                if ((1 << a_len) - 1) & (state >> pos) != a:
+                    continue
+                value = helper(cur - 1, length + (b_len - a_len), update(state, pos, a_len, b, b_len))
+                if value == True:
+                    return True
+        return False
+
+    return helper(steps - lim, tgt_l, tgt)
+def unlockTheCode( src, tgt,steps, rules):
+    if steps < 15:
+       return middle(src, tgt, steps, rules)
+    def hash(state):
+        return len(state), int(state.replace("X", "0").replace("O", "1"), 2)
+
+    def update(state, pos, length, pattern, p_length):
+        return ((state >> (pos + length)) << (pos + p_length)) | (state & ((1 << pos) - 1)) | (pattern << pos)
+
+    RULES = [list(map(hash, i)) for i in rules]
+
+    src_l, src = hash(src)
+    tgt_l, tgt = hash(tgt)
+
+    flag = 0
+    lim = min(6, steps)
+
+    vis = [{} for i in range(51)]
+    queue = [(src_l, src, [])]
+    MOVES = [set() for i in range(51)]
+
+    for length, state, moves in queue:
+        if len(moves) == lim:
+            MOVES[length].add(state)
+        else:
+            for rule, ((a_len, a), (b_len, b)) in enumerate(RULES):
+                for pos in range(0, length - a_len + 1):
+                    if ((1 << a_len) - 1) & (state >> pos) != a:
+                        continue
+                    new_length = length + b_len - a_len
+                    new_state = update(state, pos, a_len, b, b_len)
+                    if new_state in vis[new_length]:
+                        diff = len(moves) - len(vis[new_length][new_state])
+                        if diff == 0:
+                            continue
+                        
+                        continue
+                    vis[new_length][new_state] = moves
+                    queue.append((new_length, new_state, moves + [rule * 53 + pos]))
+
+    memo = [set() for i in range(51)]
+
+    def helper(cur, length, state):
+        if cur == 0:
+            return state in MOVES[length]
+        if (length, state) in memo[length]:
+            return False
+        memo[length].add((length, state))
+        for rule, ((b_len, b), (a_len, a)) in enumerate(RULES):
+            for pos in range(0, length - a_len + 1):
+                if ((1 << a_len) - 1) & (state >> pos) != a:
+                    continue
+                value = helper(cur - 1, length + (b_len - a_len), update(state, pos, a_len, b, b_len))
+                if value == True:
+                    return True
+        return False
+
+    return helper(steps - lim, tgt_l, tgt)

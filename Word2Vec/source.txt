@@ -1,0 +1,8 @@
+http://www.realworldnlpbook.com/blog/gentle-introduction-to-skipgram-word2vec-model-allennlp-ver.html
+https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf
+https://github.com/mhagiwara/realworldnlp/blob/master/examples/embeddings/word2vec.py#L120
+http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/
+http://mccormickml.com/2017/01/11/word2vec-tutorial-part-2-negative-sampling/
+http://mccormickml.com/2018/06/15/applying-word2vec-to-recommenders-and-advertising/
+https://www.tensorflow.org/tutorials/representation/word2vec
+https://cambridgespark.com/4046-2/

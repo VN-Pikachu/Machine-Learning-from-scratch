@@ -1,0 +1,11 @@
+1.Explanation of GMM and EM Algorithm
+https://stephens999.github.io/fiveMinuteStats/intro_to_em.html
+2.Good Explanation
+http://www.computerrobotvision.org/2010/tutorial_day/GMM_said_crv10_tutorial.pdf
+3.Explanation of the notation of the math
+http://www.aishack.in/tutorials/expectation-maximization-gaussian-mixture-model-mixtures/
+4.Implementation
+https://towardsdatascience.com/gaussian-mixture-modelling-gmm-833c88587c7f
+Reference:
+What is a mixture model:
+https://stephens999.github.io/fiveMinuteStats/intro_to_mixture_models.html

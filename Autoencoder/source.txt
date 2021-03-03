@@ -1,0 +1,8 @@
+What is Autoencoder ? How it works ? Where's it used?
+https://medium.com/datadriveninvestor/deep-learning-autoencoders-db265359943e
+Different Types of Autoencoders
+https://medium.com/datadriveninvestor/deep-learning-different-types-of-autoencoders-41d4fa5f7570
+Sparsity Autoencoder Tutorial
+http://ufldl.stanford.edu/tutorial/unsupervised/Autoencoders/
+Comprehensive Tutorial on Autoencoder (Variational Autoencoder)
+https://towardsdatascience.com/generating-images-with-autoencoders-77fd3a8dd368

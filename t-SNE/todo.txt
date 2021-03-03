@@ -1,0 +1,5 @@
+http://mlexplained.com/2018/09/14/paper-dissected-visualizing-data-using-t-sne-explained/
+https://medium.com/@layog/i-dont-understand-t-sne-part-1-50f507acd4f9
+https://nlml.github.io/in-raw-numpy/in-raw-numpy-t-sne/
+https://github.com/oreillymedia/t-SNE-tutorial
+https://observablehq.com/@robstelling/t-sne_en

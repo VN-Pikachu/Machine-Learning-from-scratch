@@ -1,0 +1,13 @@
+Density Estimation
+http://faculty.washington.edu/yenchic/17Sp_403/Lec7-density.pdf
+visualize:
+https://mathisonian.github.io/kde/
+Understanding kernel density estimation
+https://en.wikipedia.org/wiki/Kernel_density_estimation
+________________________________________________________
+Meanshift algorithmn(Theory)
+http://robot-develop.org/wp-content/uploads/2012/03/seg3.pdf
+Meanshift Algorithmn(Implementation)
+http://www.chioka.in/meanshift-algorithm-for-the-rest-of-us-python/
+Github Implementation
+https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/cluster/mean_shift_.py

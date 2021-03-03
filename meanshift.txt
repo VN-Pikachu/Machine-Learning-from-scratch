@@ -1,0 +1,8 @@
+Articles:
+http://www.chioka.in/meanshift-algorithm-for-the-rest-of-us-python/
+https://spin.atomicobject.com/2015/05/26/mean-shift-clustering/
+Paper:
+http://homepages.inf.ed.ac.uk/rbf/CVonline/LOCAL_COPIES/TUZEL1/MeanShift.pdf
+Related information:
+https://en.wikipedia.org/wiki/Kernel_density_estimation
+https://en.wikipedia.org/wiki/Weighted_arithmetic_mean

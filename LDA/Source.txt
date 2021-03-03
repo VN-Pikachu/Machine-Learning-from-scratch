@@ -1,0 +1,6 @@
+Mathematic
+http://www.sci.utah.edu/~shireen/pdfs/tutorials/Elhabian_LDA09.pdf
+Detail Paper (Best)
+https://www.researchgate.net/publication/316994943_Linear_discriminant_analysis_A_detailed_tutorial
+Algorithmn Summary:
+https://www.digitalvidya.com/blog/linear-discriminant-analysis/

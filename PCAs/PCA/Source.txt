@@ -1,0 +1,16 @@
+
+eigenvectors and eigenvalues
+http://setosa.io/ev/eigenvectors-and-eigenvalues/
+simple video explanation(done):
+https://www.youtube.com/watch?v=g-Hb26agBFg
+
+
+
+Intuition:
+https://stats.stackexchange.com/questions/2691/making-sense-of-principal-component-analysis-eigenvectors-eigenvalues
+Detail explanation Paper(In-depth):
+https://ourarchive.otago.ac.nz/bitstream/handle/10523/7534/OUCS-2002-12.pdf?sequence=1&isAllowed=y
+Mathematic:
+https://www.youtube.com/watch?v=IbE0tbjy6JQ&list=PLBv09BD7ez_5_yapAg86Od6JeeypkS4YM
+Understanding Principle Components
+https://www.analyticsvidhya.com/blog/2016/03/practical-guide-principal-component-analysis-python/

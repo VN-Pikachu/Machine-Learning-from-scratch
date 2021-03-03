@@ -1,0 +1,2 @@
+https://www.stat.cmu.edu/~cshalizi/350/lectures/14/lecture-14.pdf
+https://thetalog.com/machine-learning/locally-linear-embedding/

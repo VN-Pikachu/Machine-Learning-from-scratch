@@ -1,0 +1,3 @@
+https://towardsdatascience.com/collaborative-filtering-based-recommendation-systems-exemplified-ecbffe1c20b1
+https://towardsdatascience.com/intro-to-recommender-system-collaborative-filtering-64a238194a26
+https://blog.statsbot.co/recommendation-system-algorithms-ba67f39ac9a3

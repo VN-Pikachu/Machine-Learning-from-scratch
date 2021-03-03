@@ -1,0 +1,4 @@
+Overview Non-linear Dimensionality Reduction Algorithms:
+MDS, Sammon Mapping, Isomap, t-SNE
+https://jhui.github.io/2017/01/15/Machine-learning-Multi-dimensional-scaling-and-visualization/
+http://www.uta.fi/sis/mtt/mtts1-dimensionality_reduction/drv_lecture6_updated.pdf

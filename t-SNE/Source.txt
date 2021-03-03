@@ -1,0 +1,12 @@
+Original Paper
+http://www.jmlr.org/papers/volume9/vandermaaten08a/vandermaaten08a.pdf
+Explain the Paper
+http://mlexplained.com/2018/09/14/paper-dissected-visualizing-data-using-t-sne-explained/
+How to use t-SNE effectively
+https://distill.pub/2016/misread-tsne/
+Implementation Steps
+https://observablehq.com/@robstelling/t-sne_en
+Implementation code using Numpy and Python:
+https://nlml.github.io/in-raw-numpy/in-raw-numpy-t-sne/
+Videos:
+GoogleTechTalk, StatQuest

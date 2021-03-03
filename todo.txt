@@ -1,0 +1,7 @@
+Github:In-depth
+Support vector Machine
+K-means Clustering
+
+Algorithmn:
+Spectral Clustering
+

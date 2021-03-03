@@ -1,0 +1,9 @@
+Simplest Explanation
+http://www.ques10.com/p/9286/clearly-explain-the-working-of-the-db_scan-algor-2/
+Slides:
+http://www.cs.csi.cuny.edu/~gu/teaching/courses/csc76010/slides/Clustering%20Algorithm%20by%20Vishal.pdf
+http://www.cs.fsu.edu/~ackerman/CIS5930/notes/DBSCAN.pdf
+Visualization
+https://www.naftaliharris.com/blog/visualizing-dbscan-clustering/
+video:
+https://www.youtube.com/watch?v=5E097ZLE9Sg

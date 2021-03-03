@@ -1,0 +1,4 @@
+Overview about Dimensionality Reduction and Some popular Algorithmns
+http://www.uta.fi/sis/mtt/mtts1-dimensionality_reduction/drv_lecture6_updated.pdf
+Tutorials on PCA, t-SNE, LLE, Isomap, MDS, Autoencoder
+https://blog.paperspace.com/dimension-reduction-with-t-sne/

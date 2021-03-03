@@ -1,0 +1,12 @@
+Prior Knowledge and an overview of the Spectral Algorithmn (Provide the context to better understanding the explanation of the videos below)
+http://www.cvl.isy.liu.se:82/education/graduate/spectral-clustering/SC_course_part1.pdf
+
+Mathematical Explanation Series (Best - Just watch this and understand all)
+https://www.youtube.com/watch?v=b2aJBaZ4cLI&list=PLdk2fd27CQzT7opzoGHvqDuDbltozWn7O&index=11
+Lecture Professor Ali
+https://www.youtube.com/watch?v=V680Ev0MNvs
+Reference:
+Summarize the Algo
+https://towardsdatascience.com/spectral-clustering-82d3cff3d3b7
+Concepts and terminology
+https://www.cs.cmu.edu/~aarti/Class/10701/slides/Lecture21_2.pdf

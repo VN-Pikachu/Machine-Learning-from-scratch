@@ -1,0 +1,12 @@
+Overview
+https://en.wikipedia.org/wiki/Radial_basis_function_network
+Detail Description
+https://mccormickml.com/2013/08/15/radial-basis-function-network-rbfn-tutorial/
+Detail Explanation, Implementation
+https://www.hackerearth.com/blog/developers/radial-basis-function-network
+Breif Explanation and Implementation
+https://pythonmachinelearning.pro/using-neural-networks-for-regression-radial-basis-function-networks/
+Summary
+https://medium.com/@SeoJaeDuk/archived-post-radial-basis-function-artificial-neural-networks-9fad1479a9bc
+Paper
+https://www.cs.cmu.edu/afs/cs/academic/class/15883-f13/slides/rbf.pdf

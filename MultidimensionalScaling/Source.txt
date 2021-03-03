@@ -1,0 +1,6 @@
+Overview
+https://www.stat.pitt.edu/sungkyu/course/2221Fall13/lec8_mds_combined.pdf
+NMDS algorithm desciption and examples:
+http://sfb649.wiwi.hu-berlin.de/fedc_homepage/xplore/tutorials/mvahtmlnode100.html
+NMDS Theory:
+http://www.pelagicos.net/MARS6300/lectures/MARS6300_Lecture12_sp2018.pdf

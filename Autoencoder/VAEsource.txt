@@ -1,0 +1,17 @@
+https://towardsdatascience.com/generating-images-with-autoencoders-77fd3a8dd368
+https://jaan.io/what-is-variational-autoencoder-vae-tutorial/
+http://anotherdatum.com/vae2.html
+http://anotherdatum.com/vae.html
+https://arxiv.org/pdf/1606.05908.pdf
+http://kvfrans.com/variational-autoencoders-explained/
+https://ermongroup.github.io/cs228-notes/extras/vae/
+https://ermongroup.github.io/cs228-notes/learning/latent/
+https://www.researchgate.net/publication/304163568_Tutorial_on_Variational_Autoencoders
+https://hsaghir.github.io/data_science/denoising-vs-variational-autoencoder/
+https://ermongroup.github.io/cs228-notes/extras/vae/
+https://stats.stackexchange.com/questions/199605/how-does-the-reparameterization-trick-for-vaes-work-and-why-is-it-important
+https://stats.stackexchange.com/questions/355150/basics-of-reparametrization-trick-in-machine-learning?noredirect=1&lq=1
+https://github.com/hsaghir/VAE_intuitions/blob/master/VAE_MNIST_keras.ipynb
+https://www.cs.princeton.edu/courses/archive/fall11/cos597C/lectures/variational-inference-i.pdf
+http://mlexplained.com/2017/12/28/an-intuitive-explanation-of-variational-autoencoders-vaes-part-1/
+http://mlexplained.com/2017/12/28/an-introduction-to-the-math-of-variational-autoencoders-vaes-part-2/

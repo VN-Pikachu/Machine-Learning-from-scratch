@@ -1,0 +1,4 @@
+https://stats.stackexchange.com/questions/131140/what-exactly-is-the-procedure-to-compute-principal-components-in-kernel-pca
+Video: Data Science course Ali Ghodsi
+Self Note
+https://towardsdatascience.com/kernel-pca-vs-pca-vs-ica-in-tensorflow-sklearn-60e17eb15a64
